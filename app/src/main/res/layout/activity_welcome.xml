@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal"
+    android:background="#F57C00"
+    android:paddingTop="90dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/cart_logo"
+        android:layout_marginBottom="-25dp"/>
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="180dp"
+        android:src="@drawable/yolo_logo"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="LOGIN"
+        android:textColor="#F57C00"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="#FDF4EF"/>
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SIGN UP"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#F57C00"
+        android:backgroundTint="#FDF4EF"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

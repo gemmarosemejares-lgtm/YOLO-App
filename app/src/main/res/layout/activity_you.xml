@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- SCROLL -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- TOP SECTION -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#F57C00">
+
+                <!-- PROFILE -->
+
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/ic_user"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle_bg"
+                    android:clipToOutline="true"/>
+
+                <!-- USERNAME -->
+
+                <TextView
+                    android:id="@+id/txtUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YOLO User"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FDF4EF"
+                    android:layout_marginTop="15dp"/>
+
+                <!-- BUTTONS -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="25dp">
+
+                    <!-- EDIT PROFILE -->
+
+                    <Button
+                        android:id="@+id/btnEditProfile"
+                        android:layout_width="130dp"
+                        android:layout_height="45dp"
+                        android:text="Edit Profile"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="#F57C00"
+                        android:backgroundTint="#FDF4EF"
+                        android:layout_marginEnd="12dp"/>
+
+                    <!-- EDIT USERNAME -->
+
+                    <Button
+                        android:id="@+id/btnEditUsername"
+                        android:layout_width="150dp"
+                        android:layout_height="45dp"
+                        android:text="Edit Username"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="#F57C00"
+                        android:backgroundTint="#FDF4EF"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- MENU -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FDF4EF"
+                android:padding="18dp">
+
+                <!-- MY PURCHASES -->
+
+                <LinearLayout
+                    android:id="@+id/btnPurchases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <!-- TOP -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="📦  My Purchases"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:id="@+id/txtArrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⌄"
+                            android:textSize="20sp"
+                            android:textColor="#888888"/>
+
+                    </LinearLayout>
+
+                    <!-- HIDDEN CONTENT -->
+
+                    <LinearLayout
+                        android:id="@+id/layoutPurchases"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:layout_marginTop="20dp">
+
+                        <!-- TO PAY -->
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_pay"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="To Pay"
+                                android:textStyle="bold"
+                                android:layout_marginTop="8dp"/>
+
+                        </LinearLayout>
+
+                        <!-- TO SHIP -->
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_ship"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="To Ship"
+                                android:textStyle="bold"
+                                android:layout_marginTop="8dp"/>
+
+                        </LinearLayout>
+
+                        <!-- TO RECEIVE -->
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_receive"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="To Receive"
+                                android:textStyle="bold"
+                                android:layout_marginTop="8dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- OTHER MENUS -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="❤️  Liked"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🕒  Recently Viewed"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="💎  Loyalty"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🎁  Gift Vouchers"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="⚙  Account Setting"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🛠  Help Centre"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="💬  Chat with YOLO"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="15dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- BOTTOM NAVIGATION -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="#FDF4EF"
+        android:gravity="center"
+        android:elevation="10dp">
+
+        <!-- HOME -->
+
+        <LinearLayout
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_home"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <!-- CATEGORY -->
+
+        <LinearLayout
+            android:id="@+id/navCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_category"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <!-- YOU -->
+
+        <LinearLayout
+            android:id="@+id/navYou"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_user"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You"
+                android:textStyle="bold"
+                android:textColor="#FF6F3D"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <!-- CART -->
+
+        <LinearLayout
+            android:id="@+id/navCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_cart"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cart"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <!-- LOGOUT -->
+
+        <LinearLayout
+            android:id="@+id/navLogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_logout"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

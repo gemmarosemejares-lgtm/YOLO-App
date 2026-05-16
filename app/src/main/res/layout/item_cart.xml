@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#FDF4EF"
+    android:padding="15dp"
+    android:layout_marginBottom="15dp"
+    android:elevation="3dp">
+
+    <!-- LEFT SIDE -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- PRODUCT NAME -->
+
+        <TextView
+            android:id="@+id/txtCartName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+
+        <!-- PRICE -->
+
+        <TextView
+            android:id="@+id/txtCartPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₱0"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#F57C00"
+            android:layout_marginTop="8dp"/>
+
+        <!-- QUANTITY BOX -->
+
+        <LinearLayout
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp"
+            android:background="#FDF4EF"
+            android:gravity="center_vertical">
+
+            <!-- MINUS -->
+
+            <TextView
+                android:id="@+id/btnMinus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#9E9E9E"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <!-- LINE -->
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="#FDF4EF"/>
+
+            <!-- QUANTITY -->
+
+            <TextView
+                android:id="@+id/txtQuantity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"/>
+
+            <!-- LINE -->
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="#D6D6D6"/>
+
+            <!-- PLUS -->
+
+            <TextView
+                android:id="@+id/btnPlus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+        <!-- REMOVE BUTTON -->
+
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove Item"
+            android:textStyle="bold"
+            android:textColor="#FDF4EF"
+            android:textSize="12sp"
+            android:backgroundTint="#FF5722"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <!-- PRODUCT IMAGE -->
+
+    <ImageView
+        android:id="@+id/imgCart"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/case1"
+        android:background="@drawable/rounded_product"
+        android:padding="5dp"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"/>
+
+</LinearLayout>

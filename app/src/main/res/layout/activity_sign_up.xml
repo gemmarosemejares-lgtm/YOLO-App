@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F57C00">
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="130dp"
+        android:src="@drawable/yolo_logo"
+        android:layout_marginBottom="35dp"/>
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Last Name"
+        android:background="@drawable/rounded_edittext"
+        android:paddingStart="20dp"
+        android:backgroundTint="#FDF4EF"/>
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="First Name"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/rounded_edittext"
+        android:paddingStart="20dp"
+        android:backgroundTint="#FDF4EF"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Email"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/rounded_edittext"
+        android:paddingStart="20dp"
+        android:backgroundTint="#FDF4EF"
+        android:inputType="textEmailAddress"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext"
+        android:backgroundTint="#FDF4EF"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="15dp"
+        android:layout_marginTop="18dp">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Password"
+            android:background="@android:color/transparent"
+            android:inputType="textPassword"/>
+
+        <ImageView
+            android:id="@+id/imgEyeSignup"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_eye"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="18dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="SIGN UP"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#F57C00"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginTop="25dp"/>
+
+</LinearLayout>
