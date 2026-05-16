@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FDF4EF">
+    android:background="#FF8A50">
 
     <!-- TOP BAR -->
 
@@ -114,7 +114,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="@drawable/rounded_product"
-        android:padding="5dp"
+        android:padding="8dp"
         android:clipToOutline="true"
         android:scaleType="centerCrop"/>
 
@@ -150,7 +150,7 @@
                 android:text="Home"
                 android:textColor="#FF3D57"
                 android:textStyle="bold"
-                android:textSize="13sp"/>
+                android:textSize="12sp"/>
         </LinearLayout>
 
         <!-- CATEGORY -->
