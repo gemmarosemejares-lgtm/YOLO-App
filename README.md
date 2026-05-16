@@ -14,14 +14,19 @@ The project also focuses on creating a clean and responsive user interface inspi
 
 ## Login Screen
 <img width="618" height="901" alt="Screenshot 2026-05-16 204542" src="https://github.com/user-attachments/assets/216ac3ea-2c91-456d-9928-7515f3c4e87f" />
+
 ## Sign UpScreen
 <img width="551" height="903" alt="Screenshot 2026-05-16 204620" src="https://github.com/user-attachments/assets/2b50ce57-82b5-41bd-bffe-cfd1a89f8b6e" />
+
 ## Home Screen
 <img width="592" height="900" alt="Screenshot 2026-05-16 204706" src="https://github.com/user-attachments/assets/2f750653-7677-4e61-a0b7-30e93371ba61" />
+
 ## Categories Screen
 <img width="568" height="911" alt="Screenshot 2026-05-16 204858" src="https://github.com/user-attachments/assets/9679af19-ca8b-4ccc-9a6c-9d2ee22c23d1" />
+
 ## Cart Screen
 <img width="565" height="906" alt="Screenshot 2026-05-16 204844" src="https://github.com/user-attachments/assets/5c59e544-319c-4229-ae65-74e245cd84f9" />
+
 ## Profile Screen
 <img width="622" height="932" alt="Screenshot 2026-05-16 211455" src="https://github.com/user-attachments/assets/df179773-19fa-41a7-8239-19a33fe1ee89" />
 
