@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FDF4EF"
-    android:padding="15dp">
+    android:padding="18dp">
 
     <!-- TOP BAR -->
 
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="PICK LIST"
-            android:textSize="28sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="#F57C00"
             android:gravity="center"/>
@@ -84,10 +84,10 @@
     <Button
         android:id="@+id/btnOrder"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="62dp"
         android:text="Place This Order"
         android:textStyle="bold"
-        android:textSize="19sp"
+        android:textSize="18sp"
         android:textColor="#FDF4EF"
         android:backgroundTint="#F57C00"
         android:layout_marginTop="20dp"/>
