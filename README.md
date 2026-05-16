@@ -1,6 +1,7 @@
 # YOLO-App
  YOLO stands for:
   You Only Live Once
+  
 <img width="632" height="901" alt="main screen" src="https://github.com/user-attachments/assets/b2ddbdd2-0d8f-4f9f-8882-a8cefe2661ac" />
 
 ## Final Project – Mobile App Development
