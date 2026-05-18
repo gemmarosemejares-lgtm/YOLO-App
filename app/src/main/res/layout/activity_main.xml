@@ -12,21 +12,21 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="72dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:padding="10dp"
+        android:padding="12dp"
         android:background="#F57C00">
 
         <EditText
             android:id="@+id/etSearch"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="52dp"
             android:layout_weight="1"
             android:hint="Search products"
             android:textColor="#000000"
             android:textColorHint="#888888"
-            android:paddingStart="15dp"
+            android:paddingStart="16dp"
             android:background="@drawable/rounded_edittext"
             android:backgroundTint="#FDF4EF"
             android:cursorVisible="false"
@@ -36,8 +36,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="🔍"
-            android:textSize="24sp"
-            android:layout_marginStart="10dp"/>
+            android:textSize="25sp"
+            android:layout_marginStart="12dp"/>
     </LinearLayout>
 
     <!-- CATEGORY -->
@@ -51,56 +51,61 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp">
+            android:padding="12dp">
 
             <Button
                 android:id="@+id/btnAll"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="42dp"
                 android:text="All"
                 android:textColor="#FDF4EF"
                 android:textStyle="bold"
+                android:textSize="14sp"
                 android:backgroundTint="#F57C00"/>
 
             <Button
                 android:id="@+id/btnWomen"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="42dp"
                 android:text="Women"
                 android:textColor="#FDF4EF"
                 android:textStyle="bold"
+                android:textSize="14sp"
                 android:backgroundTint="#F57C00"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="12dp"/>
 
             <Button
                 android:id="@+id/btnMen"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="42dp"
                 android:text="Men"
                 android:textColor="#FDF4EF"
                 android:textStyle="bold"
+                android:textSize="14sp"
                 android:backgroundTint="#F57C00"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="12dp"/>
 
             <Button
                 android:id="@+id/btnSports"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="42dp"
                 android:text="Sports"
                 android:textColor="#FDF4EF"
                 android:textStyle="bold"
+                android:textSize="14sp"
                 android:backgroundTint="#F57C00"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="12dp"/>
 
             <Button
                 android:id="@+id/btnAccessories"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="42dp"
                 android:text="Accessories"
                 android:textColor="#FDF4EF"
                 android:textStyle="bold"
+                android:textSize="14sp"
                 android:backgroundTint="#F57C00"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="12dp"/>
 
         </LinearLayout>
 
@@ -114,7 +119,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="@drawable/rounded_product"
-        android:padding="8dp"
+        android:padding="10dp"
         android:clipToOutline="true"
         android:scaleType="centerCrop"/>
 
@@ -122,7 +127,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="82dp"
         android:orientation="horizontal"
         android:background="#FDF4EF"
         android:gravity="center"
@@ -139,8 +144,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="28dp"
-                android:layout_height="28dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/ic_home"
                 app:tint="#FF3D57"/>
 
@@ -150,7 +155,7 @@
                 android:text="Home"
                 android:textColor="#FF3D57"
                 android:textStyle="bold"
-                android:textSize="12sp"/>
+                android:textSize="13sp"/>
         </LinearLayout>
 
         <!-- CATEGORY -->
@@ -164,8 +169,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="28dp"
-                android:layout_height="28dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/ic_category"
                 app:tint="#000000"/>
 
@@ -175,7 +180,7 @@
                 android:text="Categories"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                android:textSize="13sp"/>
+                android:textSize="14sp"/>
         </LinearLayout>
 
         <!-- YOU -->
@@ -189,8 +194,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="28dp"
-                android:layout_height="28dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/ic_user"
                 app:tint="#000000"/>
 
@@ -200,7 +205,7 @@
                 android:text="You"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                android:textSize="13sp"/>
+                android:textSize="14sp"/>
         </LinearLayout>
 
         <!-- CART -->
@@ -214,8 +219,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="28dp"
-                android:layout_height="28dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/ic_cart"
                 app:tint="#000000"/>
 
@@ -225,7 +230,7 @@
                 android:text="Cart"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                android:textSize="13sp"/>
+                android:textSize="14sp"/>
         </LinearLayout>
 
         <!-- LOGOUT -->
@@ -239,8 +244,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="28dp"
-                android:layout_height="28dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/ic_logout"
                 app:tint="#000000"/>
 
@@ -250,8 +255,9 @@
                 android:text="Logout"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                android:textSize="13sp"/>
+                android:textSize="14sp"/>
         </LinearLayout>
 
     </LinearLayout>
+
 </LinearLayout>
