@@ -91,11 +91,11 @@ users
 # Developers
 * Gemma Rose Mejares
 * Group Members
-   - Keecia Nalupano -Added Flask REST API files
-   - Angelica Sorsone -Enhanced Profile Interface Design
-   - Kim Edel - Enchance Profile Dialog Inteface
-   - Jhon lyod Viñas - Updated Profile Dialog Interface
-   - Brandon Doluta - Improved Product Layout
+   - Keecia Nalupano 
+   - Angelica Sorsone 
+   - Kim Edel 
+   - Jhon lyod Viñas
+   - Brandon Doluta 
 
 # GitHub Repository
 https://github.com/gemmarosemejares-lgtm/YOLO-App
