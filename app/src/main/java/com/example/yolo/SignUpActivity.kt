@@ -90,8 +90,7 @@ class SignUpActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            val url =
-                "http://10.0.2.2:5000/signup"
+            val url = "http://10.0.2.2:5000/signup"
 
             val stringRequest =
                 object : StringRequest(

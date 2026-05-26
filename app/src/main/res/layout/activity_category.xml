@@ -2,14 +2,12 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FDF4EF">
 
     <!-- TOP BAR -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="72dp"
@@ -24,13 +22,12 @@
             android:layout_height="52dp"
             android:layout_weight="1"
             android:hint="Search products"
-            android:textColor="#000000"
-            android:textColorHint="#888888"
+            android:textColor="#000"
+            android:textColorHint="#888"
             android:paddingStart="16dp"
             android:background="@drawable/rounded_edittext"
             android:backgroundTint="#FDF4EF"
-            android:cursorVisible="false"
-            android:inputType="text"/>
+            android:cursorVisible="false"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -40,8 +37,7 @@
             android:layout_marginStart="12dp"/>
     </LinearLayout>
 
-    <!-- CONTENT -->
-
+    <!-- SCROLL CONTENT -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -54,36 +50,30 @@
             android:padding="18dp">
 
             <!-- TITLE -->
-
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Trending Picks"
                 android:textStyle="bold"
-                android:textSize="30sp"
-                android:textColor="#000000"
-                android:layout_gravity="center"
-                android:layout_marginBottom="32dp"/>
+                android:textSize="26sp"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"/>
 
-            <!-- PHONE CASES -->
-
+            <!-- PHONE -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Phone Cases"
                 android:textStyle="bold"
-                android:textSize="21sp"
-                android:textColor="#F57C00"
-                android:layout_marginBottom="16dp"/>
-
-            <!-- SAMPLE PRODUCT -->
+                android:textSize="20sp"
+                android:textColor="#F57C00"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_marginBottom="38dp">
+                android:layout_marginBottom="30dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -92,26 +82,20 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:layout_width="125dp"
-                        android:layout_height="125dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
                         android:src="@drawable/case1"
                         android:background="@drawable/rounded_product"
-                        android:padding="6dp"
-                        android:scaleType="centerCrop"
-                        android:clipToOutline="true"/>
+                        android:padding="6dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Strawberry Case"
-                        android:textStyle="bold"
-                        android:textSize="15sp"
-                        android:layout_marginTop="12dp"/>
+                        android:textStyle="bold"/>
                 </LinearLayout>
 
-                <Space
-                    android:layout_width="32dp"
-                    android:layout_height="wrap_content"/>
+                <Space android:layout_width="30dp" android:layout_height="1dp"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -120,40 +104,194 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:layout_width="125dp"
-                        android:layout_height="125dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
                         android:src="@drawable/case2"
                         android:background="@drawable/rounded_product"
-                        android:padding="6dp"
-                        android:scaleType="centerCrop"
-                        android:clipToOutline="true"/>
+                        android:padding="6dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Flower Case"
-                        android:textStyle="bold"
-                        android:textSize="15sp"
-                        android:layout_marginTop="12dp"/>
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- WOMEN -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Women"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#F57C00"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/women1"
+                        android:background="@drawable/rounded_product"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Green Tank"/>
                 </LinearLayout>
 
+                <Space android:layout_width="30dp" android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/women2"
+                        android:background="@drawable/rounded_product"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Black Fitted Top"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- MEN -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Men"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#F57C00"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/men1"
+                        android:background="@drawable/rounded_product"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gray Muscle Tee"/>
+                </LinearLayout>
+
+                <Space android:layout_width="30dp" android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/men2"
+                        android:background="@drawable/rounded_product"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blue Sports Tank"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- SHOES (DUHA RA SAME SA MEN) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shoes"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#F57C00"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/shoes1"
+                        android:background="@drawable/rounded_product"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="White Shoes"/>
+                </LinearLayout>
+
+                <Space android:layout_width="30dp" android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/shoes2"
+                        android:background="@drawable/rounded_product"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Running Shoes"/>
+                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
-
     </ScrollView>
 
-    <!-- BOTTOM NAVIGATION -->
-
+    <!-- BOTTOM NAV -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="82dp"
+        android:layout_height="70dp"
         android:orientation="horizontal"
-        android:background="#FDF4EF"
-        android:gravity="center"
-        android:elevation="10dp">
-
-        <!-- HOME -->
+        android:gravity="center">
 
         <LinearLayout
             android:id="@+id/navHome"
@@ -164,18 +302,90 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_home"
-                app:tint="#000000"/>
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_home"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Home"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                android:textSize="14sp"/>
+                android:text="Home"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_category"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navYou"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_user"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_cart"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cart"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navLogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_logout"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"/>
         </LinearLayout>
 
     </LinearLayout>

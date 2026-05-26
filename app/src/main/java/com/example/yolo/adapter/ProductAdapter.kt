@@ -8,6 +8,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.android.volley.Request
+import com.android.volley.RequestQueue
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import com.example.yolo.CartManager
 import com.example.yolo.R
 import com.example.yolo.models.Product
@@ -60,6 +64,56 @@ class ProductAdapter(
         holder.btnAddCart.setOnClickListener {
 
             CartManager.cartItems.add(product)
+
+            // VOLLEY API
+
+            val url =
+                "http://10.0.2.2:5000/add_cart"
+
+            val request =
+                object : StringRequest(
+
+                    Request.Method.POST,
+                    url,
+
+                    {
+
+                        Toast.makeText(
+                            holder.itemView.context,
+                            "${product.name} added to database",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    },
+
+                    {
+
+                        Toast.makeText(
+                            holder.itemView.context,
+                            "Database Error",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+
+                ) {
+
+                    override fun getParams(): MutableMap<String, String> {
+
+                        val params = HashMap<String, String>()
+
+                        params["product_name"] = product.name.toString()
+                        params["price"] = product.price.toString()
+                        params["quantity"] = "1"
+
+                        return params
+                    }
+                }
+
+            val queue: RequestQueue =
+                Volley.newRequestQueue(
+                    holder.itemView.context
+                )
+
+            queue.add(request)
 
             Toast.makeText(
                 holder.itemView.context,
